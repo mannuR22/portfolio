@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+
+/* page 1 start*/
+
+section.page-1 {
+    background-color: #191919;
+}
+
+.upper-p-1 {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+    /* bottom: 60px; */
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.logo {
+    /* height: 40px; */
+    width: 50%;
+    max-width: 300px;
+}
+
+.middle-p-1 {
+    height: 20vh;
+    width: 100%;
+    color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.lower-p-1 {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: flex-end;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.page-2 {}
+
+.box-p-2 {}
+
+.upper-p-2 {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.intro-s {
+    color: #768BDD;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.my-self {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 37vh;
+    
+}
+
+.middle-p-2 {
+    width: 100vw;
+    height: 80vh;
+    color: black;
+}
+
+.HI {}
+
+.HI-more {}
+
+.my-self-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-e {
+    color: #768BDD;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text-p-1 {
+    color: #D9D9D9;
+    font-size: 0.8em;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+
+/* page 1 end */
+
+section.page-2 {
+    background: #1B1133;
+}
+
+.box-p-2 {}
+
+.profile-img {
+    /* height: 53px; */
+    width: 52vw;
+}
+
+.profile-img-div {
+    display: flex;
+    align-items: flex-end;
+    height: 43vh;
+    justify-content: center;
+}
+
+.lower-p-2 {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+}
