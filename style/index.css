@@ -4,11 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
+    
 }
 
 .container {
@@ -29,7 +31,10 @@ section {
 /* page 1 start*/
 
 section.page-1 {
-    background-color: #191919;
+    height: auto;
+    width: auto;
+    background: rgba(53, 47, 47, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .upper-p-1 {
@@ -73,9 +78,6 @@ section.page-1 {
     /* flex-direction: column; */
 }
 
-.page-2 {}
-
-.box-p-2 {}
 
 .upper-p-2 {
     display: flex;
@@ -97,8 +99,8 @@ section.page-1 {
 .my-self {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 37vh;
+    width: 35vw;
+    /* height: 37vh; */
     
 }
 
@@ -108,16 +110,13 @@ section.page-1 {
     color: black;
 }
 
-.HI {}
 
-.HI-more {}
 
 .my-self-text {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .intro-e {
     color: #768BDD;
     padding-left: 4vw;
@@ -137,20 +136,75 @@ section.page-1 {
 /* page 1 end */
 
 section.page-2 {
-    background: #1B1133;
+    background: #1b113352;
+    backdrop-filter: blur(5px);
+    background: rgba(53, 47, 47, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.box-p-2 {}
+.box-p-2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-between;
+}
 
+.upper-p-2{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.middle-p-2 {
+        display: flex;
+        width: 100vw;
+        /* height: 80vh; */
+        /* color: black; */
+        flex-direction: row;
+        align-items: center;
+}
+
+.division-1{
+    display: flex;
+    width: 35vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.division-2{
+    height: 38em;
+    width: 65vw;
+    background: #ffffff47;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    
+}
+section.page-3{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    align-content: flex-start;
+    background: rgba(53, 47, 47, 0.1);
+    backdrop-filter: blur(10px);
+}
 .profile-img {
     /* height: 53px; */
-    width: 16em;
+    width: 19vw;
 }
 
 .profile-img-div {
     display: flex;
-    align-items: flex-end;
-    height: 43vh;
+    align-items: center;
+    height: 25vh;
     justify-content: center;
 }
 
@@ -158,4 +212,114 @@ section.page-2 {
     height: 10vh;
     width: 100vw;
     display: flex;
+}
+
+/* MOBILE PHONE */
+
+.mobile-box {
+    height: 34em;
+    width: 20em;
+    padding: 1em;
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: black; */
+    justify-content: center;
+}
+
+.mobile-case {
+    display: flex;
+    height: 34em;
+    width: 16em;
+    border-radius: 2em;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
+.mobile-top {
+    height: 0.2em;
+    background-color: black;
+    /* padding-bottom: 2px; */
+    width: 7em;
+    /* margin-top: 4px; */
+    margin-bottom: 0.5em;
+    /* border-bottom-left-radius: 15em; */
+    /* border-bottom-right-radius: 15em; */
+    border-radius: 1em;
+}
+
+.mobile-middle{
+    height: 32em;
+    width: 15em;
+    /* margin-left: 0.3em; */
+    /* margin-right: 0.3em; */
+    display: flex;
+    background: linear-gradient(45deg, #ddd6f3, #FBD6D2);
+    border-radius: 1.6em;
+    justify-content: center;
+    align-content: center;
+    border: 0.008em solid #797979;
+    align-items: center;
+}
+.mobile-wallpaper{
+    width: 15em;
+    height: auto;
+    border-radius: 1em;
+    
+}
+.mobile-bottom{
+    display: flex;
+    height: 1.5em;
+    width: 11em;
+    /* background-color: black; */
+    /* margin-top: 0.325em; */
+    /* border-color: #768bdd; */
+    /* border: 11px; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-brand{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo{
+    height: 1em;
+    margin-right: 0.5em;
+    color: white;
+}
+.branding{
+    font-family: 'Beau Rivage', cursive;
+    /* color: white; */
+}
+.mobile-screen {
+
+}
+
+.mobile-button{
+
+}
+
+.box-p-3{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.middle-p-3{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    color: black;
+    align-items: center;
+    justify-content: center;
 }
