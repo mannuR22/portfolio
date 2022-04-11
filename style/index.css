@@ -88,17 +88,18 @@ section.page-1 {
 }
 
 .intro-s {
-    color: #768BDD;
+    color: #f9f9f961;
     padding-left: 4vw;
     display: flex;
     align-items: center;
-    font-size: 1.4em;
+    font-size: 2.4em;
     font-family: 'Roboto Mono', monospace;
 }
 
 .my-self {
     display: flex;
     justify-content: center;
+    
     width: 35vw;
     /* height: 37vh; */
     
@@ -118,11 +119,11 @@ section.page-1 {
     align-items: center;
 }
 .intro-e {
-    color: #768BDD;
+    color: #f9f9f961;
     padding-left: 4vw;
     display: flex;
     align-items: center;
-    font-size: 1.4em;
+    font-size: 2.4em;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -182,10 +183,18 @@ section.page-2 {
 .division-2{
     height: 38em;
     width: 65vw;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.Note-p-2{
+    height: 38em;
+    width: 65vw;
+    max-width: 1080px;
     background: #ffffff47;
     border-top-left-radius: 3em;
     border-bottom-left-radius: 3em;
-    
 }
 section.page-3{
     height: 100vh;
@@ -198,6 +207,7 @@ section.page-3{
 }
 .profile-img {
     /* height: 53px; */
+    max-width: 244px;
     width: 19vw;
 }
 
@@ -231,10 +241,9 @@ section.page-3{
     height: 34em;
     width: 16em;
     border-radius: 2em;
-    align-content: center;
-    justify-content: flex-start;
+    place-content: center flex-start;
     flex-direction: column;
-    background-color: white;
+    background-color: #ffffff73;
     align-items: center;
 }
 
@@ -322,4 +331,35 @@ section.page-3{
     color: black;
     align-items: center;
     justify-content: center;
+}
+
+
+.Note-p-4 {
+    height: 75vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Note-head{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+.Note-box{
+    height: 20vh;
+}
+
+
+.Note-case {
+    display: flex;
+    height: 75vh;
+    width: 60vw;
+    background: #ffffff47;
+    border-radius: 3em;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
