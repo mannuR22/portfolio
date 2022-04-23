@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    background: green;
+}
+
+.cmdSkeleton {
+    display: flex;
+    height: 34em;
+    width: 39em;
+    /* background: white; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cmdNav {
+    display: flex;
+    background: #ffffff5c;
+    height: 2em;
+    width: 39em;
+    backdrop-filter: blur(1px);
+    flex-direction: row;
+    border: #ffffff12 solid 2px;
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-bottom-width: 0px;
+}
+
+.cmdNavbox {
+    /* background: #727289; */
+    display: flex;
+    justify-content: center;
+    margin-left: 0.6em;
+    align-items: center;
+}
+
+.cmdClose {
+    height: 0.8em;
+    width: 0.8em;
+    background: red;
+    border-radius: 0.8em;
+    margin: 0.2em;
+}
+
+.cmdMin {
+    height: 0.8em;
+    width: 0.8em;
+    background: yellow;
+    border-radius: 0.8em;
+    margin: 0.2em;
+}
+
+.cmdfull {
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 0.8em;
+    margin: 0.2em;
+    background: green;
+}
+
+.cmdDisplay {
+    background: black;
+    height: 32em;
+    width: 39em;
+}

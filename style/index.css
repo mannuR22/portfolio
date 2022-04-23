@@ -5,12 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Lato&display=swap');
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
-    
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
 .container {
@@ -51,8 +53,10 @@ section.page-1 {
 
 .logo {
     /* height: 40px; */
-    width: 50%;
+    width: 16em;
     max-width: 300px;
+    box-shadow: 0px 1px 17px 12px #ffffff70;
+    border-radius: 40em;
 }
 
 .middle-p-1 {
@@ -99,10 +103,9 @@ section.page-1 {
 .my-self {
     display: flex;
     justify-content: center;
-    
-    width: 35vw;
+    /* width: 35vw; */
     /* height: 37vh; */
-    
+    flex-direction: column;
 }
 
 .middle-p-2 {
@@ -118,6 +121,7 @@ section.page-1 {
     flex-direction: column;
     align-items: center;
 }
+
 .intro-e {
     color: #f9f9f961;
     padding-left: 4vw;
@@ -152,9 +156,10 @@ section.page-2 {
     flex-direction: column;
     width: 100vw;
     justify-content: space-between;
+    align-items: center;
 }
 
-.upper-p-2{
+.upper-p-2 {
     display: flex;
     height: 10vh;
     width: 100vw;
@@ -164,31 +169,96 @@ section.page-2 {
 
 
 .middle-p-2 {
-        display: flex;
-        width: 100vw;
-        /* height: 80vh; */
-        /* color: black; */
-        flex-direction: row;
-        align-items: center;
+    display: flex;
+    width: 100vw;
+    /* height: 80vh; */
+    /* color: black; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.division-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+.leftHalf{
+    background-image: url("./media/black-cat-halfl.xcf");
+    height: 15em;
+}
+.divisionCover11 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.division-1{
+.otherHalf {
+    height: 15em;
+    position: absolute;
+    z-index: 50;
+}
+
+.division-11 {
     display: flex;
-    width: 35vw;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 7.5em;
+    height: 15em;
 }
 
-.division-2{
-    height: 38em;
-    width: 65vw;
+.mySelf-Hello {
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    font-size: 3em;
+    line-height: 0.9em;
+}
+
+.mySelf-text-intro {
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    font-size: 3em;
+    line-height: 0.7em;
+}
+
+.skills-text {
+    display: flex;
+    color: white;
+    font-family: 'Akshar', sans-serif;
+    font-size: 1.2em;
+    flex-direction: column;
+    align-items: flex-start;
+    /* font-feature-settings: inherit; */
+    width: 7.5em;
+}
+
+.division-2 {
+
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
-.Note-p-2{
+.cmdText1{
+    color: #04a904;
+    font-family: 'Roboto Mono', monospace;
+    height: 31em;
+    width: 38em;
+}
+
+.cmdText2{
+    position: absolute;
+    background-color: black;
+    /* display: none; */
+    color: #04a904;
+    font-family: 'Roboto Mono', monospace;
+    height: 31em;
+    width: 38em;
+    z-index: 50;
+}
+
+.Note-p-2 {
     height: 38em;
     width: 65vw;
     max-width: 1080px;
@@ -196,7 +266,8 @@ section.page-2 {
     border-top-left-radius: 3em;
     border-bottom-left-radius: 3em;
 }
-section.page-3{
+
+section.page-3 {
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
@@ -205,8 +276,10 @@ section.page-3{
     background: rgba(53, 47, 47, 0.1);
     backdrop-filter: blur(10px);
 }
+
 .profile-img {
     /* height: 53px; */
+    display: none;
     max-width: 244px;
     width: 19vw;
 }
@@ -259,7 +332,7 @@ section.page-3{
     border-radius: 1em;
 }
 
-.mobile-middle{
+.mobile-middle {
     height: 32em;
     width: 15em;
     /* margin-left: 0.3em; */
@@ -272,13 +345,15 @@ section.page-3{
     border: 0.008em solid #797979;
     align-items: center;
 }
-.mobile-wallpaper{
+
+.mobile-wallpaper {
     width: 15em;
     height: auto;
     border-radius: 1em;
-    
+
 }
-.mobile-bottom{
+
+.mobile-bottom {
     display: flex;
     height: 1.5em;
     width: 11em;
@@ -291,7 +366,7 @@ section.page-3{
     align-items: center;
 }
 
-.mobile-brand{
+.mobile-brand {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -299,24 +374,22 @@ section.page-3{
     align-items: center;
 }
 
-.brand-logo{
+.brand-logo {
     height: 1em;
     margin-right: 0.5em;
     color: white;
 }
-.branding{
+
+.branding {
     font-family: 'Beau Rivage', cursive;
     /* color: white; */
 }
-.mobile-screen {
 
-}
+.mobile-screen {}
 
-.mobile-button{
+.mobile-button {}
 
-}
-
-.box-p-3{
+.box-p-3 {
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -324,7 +397,7 @@ section.page-3{
     justify-content: space-between;
 }
 
-.middle-p-3{
+.middle-p-3 {
     display: flex;
     width: 100vw;
     height: 80vh;
@@ -343,11 +416,12 @@ section.page-3{
     align-items: flex-start;
 }
 
-.Note-head{
+.Note-head {
     color: white;
     font-family: 'Roboto Mono', monospace;
 }
-.Note-box{
+
+.Note-box {
     height: 20vh;
 }
 
@@ -362,4 +436,96 @@ section.page-3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+section.page-4 {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    align-content: flex-start;
+    background: rgba(53, 47, 47, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+section.page-5 {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    align-content: flex-start;
+    background: rgba(53, 47, 47, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.cmdSkeleton {
+    display: flex;
+    height: 34em;
+    width: 39em;
+    /* background: white; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cmdNav {
+    display: flex;
+    background: #ffffff5c;
+    height: 2em;
+    width: 39em;
+    backdrop-filter: blur(1px);
+    flex-direction: row;
+    border: #ffffff12 solid 2px;
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-bottom-width: 0px;
+}
+
+.cmdNavbox {
+    /* background: #727289; */
+    display: flex;
+    justify-content: center;
+    margin-left: 0.6em;
+    align-items: center;
+}
+
+.cmdClose {
+    height: 0.9em;
+    width: 0.9em;
+    background: #ef3281;
+    border-radius: 0.8em;
+    margin: 0.3em;
+}
+
+.cmdMin {
+    height: 0.9em;
+    width: 0.9em;
+    background: #ffc107;
+    border-radius: 0.8em;
+    margin: 0.3em;
+}
+
+.cmdfull {
+    height: 0.9em;
+    width: 0.9em;
+    border-radius: 0.8em;
+    margin: 0.3em;
+    background: #55a755bd;
+}
+
+.cmdDisplay {
+    background: black;
+    height: 32em;
+    width: 39em;
+    border: #ffffff42 solid 2px;
+    border-bottom-right-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
 }
